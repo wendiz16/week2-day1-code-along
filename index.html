@@ -4,9 +4,61 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css">
 	<title>STARTER - Toybox Homepage</title>
 </head>
 <body>
-    
+	<!-- skip link -->
+	<a href="#mainContent" class="skip-link">Skip to main content.</a>
+	<!-- Announcements bar -->
+	<div class="announcements">
+		<div class="wrapper">
+			<p>Complimentary shipping on orders over $50. Discount applied at checkout</p>
+		</div>
+	</div>
+	<!-- Navigation -->
+	<nav class="navBar">
+		<div class="wrapper">
+			<!-- Slide out menu -->
+			<input type="checkbox" id="openSideMenu">
+			<label for="openSideMenu">
+				<img src="./assets/menu-button.svg" alt="Menu Button">
+			</label>
+			<!-- Slide out Nav Content -->
+      <div class="slideOutNav">
+				<button>x</button>
+				<!-- Menu Content -->
+				<nav>
+					<ul class="mainMenu">
+						<li><a href="">Shop</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">News</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+
+			</div>
+			<!-- NavBar -->
+			      <!-- logo -->
+			<a href="#home">
+				<h1>Toybox</h1>
+			</a>
+			<!-- search/chart -->
+			<div class="searchChart">
+				<button class="menuIcon">
+					<img src="./assets/search.svg" alt="">
+				 </button>
+				 <a href="#" class="bag">
+					<img src="./assets/shop-bag.svg" alt="">
+				 </a>
+				 <div class="counter">
+					<p>0</p>
+				 </div>
+			</div>	 
+				 
+
+		</div>
+	</nav>
 </body>
 </html>
