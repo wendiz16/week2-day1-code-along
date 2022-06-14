@@ -297,6 +297,17 @@ a {
   margin: 0;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menuButton {
+  cursor: pointer;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -378,6 +389,9 @@ section {
   opacity: 0;
   position: absolute;
 }
+.navBar input[type=checkbox]:checked ~ .slideOutNav {
+  left: 0;
+}
 
 .searchChart {
   display: -webkit-box;
@@ -386,10 +400,6 @@ section {
 }
 .searchChart .menuIcon, .searchChart .bag {
   margin-right: 15px;
-}
-.searchChart .menuIcon {
-  background-color: transparent;
-  border: none;
 }
 .searchChart .bag {
   display: -webkit-box;
@@ -414,5 +424,38 @@ section {
 }
 
 .slideOutNav {
-  display: none;
+  background-color: #084b6d;
+  position: fixed;
+  top: 0;
+  left: -506px;
+  height: 100vh;
+  width: 100%;
+  max-width: 506px;
+  color: #fff;
+  font-family: "Young Serif";
+  padding: 35px 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mainMenu a {
+  font-family: "Young Serif";
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.mainMenu a:hover, .mainMenu a:focus {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.menuClose {
+  color: #fff;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.buttonContainer {
+  text-align: right;
 }
