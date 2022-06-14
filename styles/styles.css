@@ -229,8 +229,8 @@ template {
 /* importing Jakarta Sans font in bold */
 @font-face {
   font-family: "Jakarta Sans";
-  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff"), url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2), url(../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf);
-  font-weight: bold;
+  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff"), url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf"), url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2");
+  font-weight: normal;
 }
 @font-face {
   font-family: "Young Serif";
@@ -238,4 +238,181 @@ template {
 }
 html {
   font-size: 125%;
+}
+
+body {
+  font-family: "Jakarta Sans";
+  font-weight: normal;
+  color: #084b6d;
+}
+
+h1, h2, h3, h4, blockquote {
+  font-family: "Young Serif";
+  font-weight: normal;
+  color: #084b6d;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 0.7rem;
+}
+
+ul,
+li,
+a,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.smallCopy {
+  font-size: 0.6rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 90px;
+}
+
+.button {
+  padding: 18px 36px;
+  border: 2px solid #084b6d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.shopButton {
+  color: #084b6d;
+  background-color: transparent;
+}
+.shopButton:hover, .shopButton:focus {
+  background-color: #084b6d;
+  color: #fff;
+}
+.shopButton .aboutButton {
+  color: transparent;
+  background-color: #084b6d;
+}
+.shopButton .aboutButton:hover, .shopButton .aboutButton:focus {
+  background-color: #084b6d;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  background-color: #fff;
+  color: black;
+  z-index: 10;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+.announcements {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  border-top: 1px solid rgba(8, 75, 109, 0.08);
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: #fff;
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+.navBar input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+
+.searchChart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.searchChart .menuIcon, .searchChart .bag {
+  margin-right: 15px;
+}
+.searchChart .menuIcon {
+  background-color: transparent;
+  border: none;
+}
+.searchChart .bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.searchChart .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.searchChart .counter p {
+  width: 24px;
+  height: 24px;
+  background-color: #084b6d;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.slideOutNav {
+  display: none;
 }
