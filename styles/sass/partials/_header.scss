@@ -1,0 +1,25 @@
+header {
+  background-color: $tertiary;
+}
+header .wrapper{
+  // display: flex;
+  // margin:0;
+  // justify-content: space-between;
+  // align-items: center;
+  // width:100%;
+  margin-bottom: 90px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.headerImgContainer {
+  width:48%;
+  
+}
+.textContainer {
+  width:48%;
+}

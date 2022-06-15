@@ -18,7 +18,7 @@ section {
   text-align: center;
   transition: 0.3s;
 }
-.shopButton{
+.shopButton, .aboutButton{
   color: $primary;
   background-color: transparent;
   &:hover,&:focus{
@@ -26,13 +26,7 @@ section {
     color: $solidWhite;
   }
 .aboutButton{
-  color:transparent;
-  background-color: $primary;
-  &:hover,&:focus {
-    background-color: $primary;
-    color: $solidWhite;
-    margin: 0;
-    line-height: 1.2rem;
-  }
+  margin: 0;
+  line-height: 1.2rem;
 }
 }
