@@ -43,7 +43,7 @@
 				</nav>
 			</div>
 			<!-- NavBar -->
-			<a href="#home">
+			<a href="./index.html" class="logo">
 				<h1>Toybox</h1>
 			</a>
 			<!-- search/chart -->
@@ -60,7 +60,49 @@
 			</div>	 
 		</div>
 	</nav>
+  <!-- Header -->
+  <header class="contactHeader">
+    <div class="wrapper">
+      <h5>Contact</h5>
+      <h3>We're here to help</h3>
+      <p>Any other questions? Reach out at <a href="mailto:support@toybox.io">support@toybox.io</a></p>
+    </div>
+  </header>
+  <!-- Main -->
+  <main class="contact" id="mainContent">
+    <div class="wrapper">
+      <form action="">
+        <input type="text" id="name" placeholder="NAME">
+        <label for="name" class="sr-only">Name</label>
 
+        <input type="text" id="surname"placeholder="SURNAME">
+        <label for="surname" class="sr-only">Surname</label>
+
+        <input type="email" placeholder="EMAIL" id="email">
+        <label for="email" class="sr-only">EMAIL</label>
+
+        <input type="tel" placeholder="PHONE" id="phone">
+        <label for="phone" class="sr-only">Phone</label>
+
+        <select name="reason" id="reason">
+          <option value="placeholder" disabled selected>Reason for contacting</option>
+          <option value="refund">Refund</option>
+          <option value="status">Order status</option>
+          <option value="praise">Praise</option>
+          <option value="complaint">General concerns</option>
+        </select>
+        <textarea id="message" cols="30" rows="10" placeholder="MESSAGE FOR ME "></textarea>
+        <label for="message" class="sr-only">Message for me</label>
+        <fieldset>
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree to the Terms and Conditions</label>
+        </fieldset>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+
+  </main>
 
 
 
