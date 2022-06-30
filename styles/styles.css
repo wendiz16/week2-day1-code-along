@@ -483,6 +483,9 @@ header .wrapper {
 .textContainer {
   width: 48%;
 }
+.textContainer p {
+  margin-bottom: 50px;
+}
 
 .contactHeader {
   background-color: #fff5f5;
