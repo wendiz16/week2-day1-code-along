@@ -380,12 +380,9 @@ section {
           justify-content: space-between;
   padding: 20px 0;
 }
-.navBar input[type=checkbox] {
+.navBar .show {
   opacity: 0;
   position: absolute;
-}
-.navBar input[type=checkbox]:checked ~ .slideOutNav {
-  left: 0;
 }
 
 .searchChart {
@@ -422,15 +419,34 @@ section {
   background-color: #084b6d;
   position: fixed;
   top: 0;
-  left: -506px;
+  right: -100vw;
   height: 100vh;
   width: 100%;
-  max-width: 506px;
+  max-width: 300px;
   color: #fff;
   font-family: "Young Serif";
   padding: 35px 50px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 99;
+}
+
+.menuBtn {
+  position: fixed;
+  z-index: 100;
+  top: 1.5rem;
+  right: 1rem;
+  padding: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.close {
+  display: none;
+}
+
+.showMenu {
+  right: 0;
 }
 
 .mainMenu a {
