@@ -70,21 +70,19 @@
     background-color: $primary;
     position:fixed;
     top:0;
-    right:-100vw;
+    left:-100vw;
     height: 100vh;
     width:100%;
-    max-width: 300px;
+    max-width:300px;
     color: $solidWhite;
     font-family:$headingFont;
-    padding: 35px 50px;
+    padding: 105px 50px;
     transition: 0.5s;
     z-index: 99;
   }
   .menuBtn{
-    position: fixed;
+    position: sticky;
     z-index: 100;
-    top: 1.5rem;
-    right: 1rem;
     padding: 4px;
     // border: black solid 1px;
     background: white;
@@ -94,7 +92,7 @@
     display: none;
   }
   .showMenu{
-    right:0;
+    left:0;
   }
   
   .mainMenu {

@@ -35,6 +35,10 @@
 				</nav>
 			</div>
 			<!-- NavBar -->
+			<div class="menuBtn">
+				<img src="./assets/menu-button.svg" class="open" alt="Menu Button">
+				<i class="close fas fa-times"></i>
+			</div>
 			<a href="./index.html" class="logo">
 				<h1>Toybox</h1>
 			</a>
@@ -48,10 +52,6 @@
 				</a>
 				<div class="counter">
 					<p class="smallCopy">0</p>
-				</div>
-				<div class="menuBtn">
-					<img src="./assets/menu-button.svg" class="open" alt="Menu Button">
-					<i class="close fas fa-times"></i>
 				</div>
 			</div>	 
 		</div>
@@ -68,32 +68,38 @@
   <main class="contact" id="mainContent">
     <div class="wrapper">
       <form action="">
-        <input type="text" id="name" placeholder="NAME">
+        <input type="text" id="name" placeholder="NAME" required>
         <label for="name" class="sr-only">Name</label>
 
-        <input type="text" id="surname"placeholder="SURNAME">
+        <input type="text" id="surname"placeholder="SURNAME" required>
         <label for="surname" class="sr-only">Surname</label>
 
-        <input type="email" placeholder="EMAIL" id="email">
+        <input type="email" placeholder="EMAIL" id="email" required>
         <label for="email" class="sr-only">EMAIL</label>
 
-        <input type="tel" placeholder="PHONE" id="phone">
+        <input type="tel" placeholder="PHONE" id="phone" required>
         <label for="phone" class="sr-only">Phone</label>
 
-        <select name="reason" id="reason">
+        <select name="reason" id="reason" required>
           <option value="placeholder" disabled="true" selected="true">Reason for contacting</option>
           <option value="refund">Refund</option>
           <option value="status">Order status</option>
           <option value="praise">Praise</option>
           <option value="complaint">General concerns</option>
         </select>
-        <textarea id="message" cols="30" rows="10" placeholder="MESSAGE FOR ME "></textarea>
+        <textarea id="message" cols="30" rows="10" placeholder="MESSAGE FOR ME " required></textarea>
         <label for="message" class="sr-only">Message for me</label>
         <fieldset>
-          <input type="checkbox" id="terms">
+          <input type="checkbox" id="terms" required>
           <label for="terms">I agree to the Terms and Conditions</label>
         </fieldset>
-        <button type="submit" class="button shopButton">Send Message</button>
+        <button class="button shopButton modalBtn">Send Message</button>
+				<div id ="simpleModal" class="modal">
+					<div class="modalContent">
+						<span><a href="#" class="closeBtn"><i class="fas fa-times"></i></a></span>
+						<p>You have submitted it successfully! <br> <br>We will reach out to you shortly!❤️</p>
+					</div>
+				</div>
       </form>
     </div>
 
